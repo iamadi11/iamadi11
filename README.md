@@ -20,8 +20,8 @@
 
 ---
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Aditya-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adityaraj11/)
-[![My Website](https://img.shields.io/badge/Website-Aditya-blue?logo=html5&logoColor=white)](https://www.my-portfolio-one-weld-36.vercel.app)
-[![Mouse Follow](https://img.shields.io/badge/Mouse_Follow-Project-orange?logo=github&logoColor=white)](https://www.mouse-follow-nine.vercel.app/)
+[![My Website](https://img.shields.io/badge/Website-Aditya-blue?logo=html5&logoColor=white)](https://my-portfolio-one-weld-36.vercel.app/)
+[![Mouse Follow](https://img.shields.io/badge/Mouse_Follow-Project-orange?logo=github&logoColor=white)](https://mouse-follow-nine.vercel.app/)
 
 
 
