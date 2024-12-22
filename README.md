@@ -18,11 +18,8 @@
 ---
 [![](https://visitcount.itsvg.in/api?id=iamadi11&icon=0&color=0)](https://visitcount.itsvg.in)
 
----
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Aditya-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adityaraj11/)
-[![My Website](https://img.shields.io/badge/Website-Aditya-blue?logo=html5&logoColor=white)](https://my-portfolio-one-weld-36.vercel.app/)
+[![My Website](https://img.shields.io/badge/My_Website-Aditya-green?logo=appveyor&logoColor=white)](https://my-portfolio-one-weld-36.vercel.app/)
 [![Mouse Follow](https://img.shields.io/badge/Mouse_Follow-Project-orange?logo=github&logoColor=white)](https://mouse-follow-nine.vercel.app/)
 
-
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+___
