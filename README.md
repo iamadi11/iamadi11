@@ -142,13 +142,7 @@ A lightweight project exploring **interactive cursor-based animations**
 
 ## 📈 GitHub Stats
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=iamadi11&show_icons=true&theme=github_dark&hide_border=true" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=iamadi11&layout=compact&theme=github_dark&hide_border=true" />
-</p>
+![](https://github-readme-stats.vercel.app/api?username=iamadi11&theme=github_dark&show_icons=true) ![](https://github-readme-streak-stats.herokuapp.com?user=iamadi11&theme=github-dark) ![](https://github-readme-stats.vercel.app/api/top-langs/?username=iamadi11&layout=compact&theme=github_dark)
 
 ---
 
