@@ -1,7 +1,5 @@
 # 👋 Hi, I'm Aditya Raj
-
 ### 💻 Software Development Engineer | Frontend Specialist | React Ecosystem Expert
-
 <p align="left">
   <img src="https://komarev.com/ghpvc/?username=iamadi11&label=Profile%20Views&color=0e75b6&style=flat" alt="profile views" />
 </p>
@@ -9,25 +7,12 @@
 ---
 
 ## 🚀 About Me
-
 I'm a **Software Development Engineer with ~4.5 years of experience** building scalable, high-performance systems.
-
 - ⚡ Currently at **Cashfree Payments** — working on **risk & fraud systems**
 - 📊 Systems handling **millions of transactions/month**
 - 🧠 Reduced SLA breaches from **70% → 15%**
 - 🏗️ Built **real-time rule engine for fraud detection**
 - 🌍 Experience across **Fintech, Healthcare, Travel**
-
----
-
-## 🧠 Engineering Mindset
-
-> Build fast. Scale clean. Break nothing.
-
-- ⚡ Performance-first (Core Web Vitals, Lighthouse)
-- 🧩 Scalable architecture & clean abstractions
-- 🔄 Developer Experience (DX) focused
-- 🤖 Exploring AI-native development systems
 
 ---
 
@@ -47,96 +32,67 @@ I'm a **Software Development Engineer with ~4.5 years of experience** building s
 
 ## 🚀 Featured Projects
 
-### 🧠 Dynamic UI Generator (MCP UI PoC)
+### ⚙️ Eidos — Abstraction Layer for Service Workers
+> *Describe intent. The runtime figures out how.*
 
-A **full-stack system for generating dynamic UI components in real-time** using schema-driven architecture and sandboxed rendering.
+An **npm-published OSS library** that replaces Service Worker boilerplate with a declarative 2-line API. No cache strategy config, no retry logic, no SW file to write.
+
+```ts
+// before: ~40 lines of Workbox config
+// after:
+const products = resource('/api/products', { offline: true })
+const createOrder = action(orderApi.create, { reliability: 'neverLose' })
+```
+
+- **5 kB gzip** — zero runtime dependencies
+- `neverLose` actions persist to IndexedDB and replay automatically on reconnect
+- Full React hooks API (`useEidosStatus`, `useEidosQueue`, `useEidosQueueStats`)
+
+**Links:** [GitHub](https://github.com/iamadi11/eidos) · [Playground](https://playground-iamadi11s-projects.vercel.app) · [npm](https://www.npmjs.com/package/@sweidos/eidos)
 
 ---
 
-### 🏗️ Architecture
+### 🧠 Dynamic UI Generator (MCP UI PoC)
+A **full-stack system for generating dynamic UI components in real-time** using schema-driven architecture and sandboxed rendering.
 
 ```mermaid
 flowchart TB
-
     U[User Interaction] --> F
-
     subgraph Frontend_React_Vite
         F[UI Builder]
         R[Dynamic Renderer]
         I[Iframe Renderer]
     end
-
     subgraph Backend_Node_Express
         A[API Layer]
         M[MCP Server]
         G[UI Generator]
         D[(Data)]
     end
-
     F -->|Config| A
     A --> M
     M --> G
     G -->|HTML| A
     A --> R
     R --> I
-
     I <-->|PostMessage| R
     R -->|API Calls| A
     A --> D
 ```
 
----
+- **Iframe isolation** → safe execution of dynamic UI
+- **Schema-driven rendering** → flexible UI generation
+- **PostMessage bridge** → real-time communication
+- **Backend-driven UI** → no redeploy for UI updates
 
-### 🧠 Key Design Decisions
-
-- **Iframe isolation** → safe execution of dynamic UI  
-- **Schema-driven rendering** → flexible UI generation  
-- **PostMessage bridge** → real-time communication  
-- **Backend-driven UI** → no redeploy for UI updates  
-
----
-
-### 🧠 How It Works Internally
-
-The system follows a schema-driven pipeline where user input is sent to a backend service that generates UI definitions. These definitions are rendered inside an isolated iframe, and a PostMessage bridge enables communication between the rendered UI and the main React app, enabling real-time interaction without redeployment.
-
----
-
-### 🔗 Links
-
-- GitHub: https://github.com/iamadi11/mcp-ui-poc
+**Links:** [GitHub](https://github.com/iamadi11/mcp-ui-poc)
 
 ---
 
 ### 🎯 Mouse Follow (UI Experiment)
-
 A lightweight project exploring **interactive cursor-based animations**
 
-- GitHub: https://github.com/iamadi11/mouse-follow  
-- Live: https://mouse-follow-nine.vercel.app/
-
----
-
-## 🧩 Problems I Solved
-
-### ⚡ Dynamic UI Generation
-- Problem: UI changes require deployments  
-- Solution: Schema-driven system  
-- Impact: Faster iteration  
-
----
-
-### 📉 SLA Breach Reduction
-- Problem: High SLA violations (~70%)  
-- Solution: Real-time processing system  
-- Impact: Reduced to ~15%  
-
----
-
-### ⚡ Frontend Performance
-- Problem: Slow load times  
-- Solution: Optimization techniques  
-- Impact: Better UX  
+**Links:** [GitHub](https://github.com/iamadi11/mouse-follow) · [Live](https://mouse-follow-nine.vercel.app/)
 
 ---
 
@@ -151,9 +107,8 @@ A lightweight project exploring **interactive cursor-based animations**
 ---
 
 ## 🤖 Currently Exploring
-
 - AI-powered dev systems (MCP, Cursor)
-- Code automation & intelligent tooling
+- OSS library development & npm publishing
 - Frontend architecture at scale
 
 ---
@@ -175,5 +130,4 @@ A lightweight project exploring **interactive cursor-based animations**
 ---
 
 ## ⚡ Fun Fact
-
 I like building systems that **scale silently but impact massively** 🚀
