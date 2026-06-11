@@ -53,7 +53,7 @@ const createOrder = action(orderApi.create, { reliability: 'neverLose' })
 ---
 
 ### 🧠 Dynamic UI Generator (MCP UI PoC)
-A **full-stack system for generating dynamic UI components in real-time** using schema-driven architecture and sandboxed rendering.
+A **full-stack system that turns any API endpoint into a UI** — fetch data, an LLM picks components from a registered design system, render via MCP UI in a sandboxed iframe.
 
 ```mermaid
 flowchart TB
@@ -81,7 +81,8 @@ flowchart TB
 ```
 
 - **Iframe isolation** → safe execution of dynamic UI
-- **Schema-driven rendering** → flexible UI generation
+- **Multi-LLM planner** → Claude, GPT, Gemini adapters (`ui-compose-kit`)
+- **Pluggable design systems** → glass, shadcn, Material themes
 - **PostMessage bridge** → real-time communication
 - **Backend-driven UI** → no redeploy for UI updates
 
