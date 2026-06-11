@@ -91,7 +91,7 @@ flowchart TB
 - **PostMessage bridge** → real-time communication
 - **Backend-driven UI** → no redeploy for UI updates
 
-**Links:** [GitHub](https://github.com/iamadi11/mcp-ui-poc)
+**Links:** [GitHub](https://github.com/iamadi11/mcp-ui-poc) · [Live](https://mcp-ui-poc.vercel.app/)
 
 ---
 
