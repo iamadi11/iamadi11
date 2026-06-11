@@ -65,19 +65,24 @@ flowchart TB
     end
     subgraph Backend_Node_Express
         A[API Layer]
-        M[MCP Server]
-        G[UI Generator]
-        D[(Data)]
+        DS[Data Source - SSRF guard]
+        P[ui-compose-kit Planner]
+        L[LLM Adapters - Claude/GPT/Gemini]
+        T[Design System - glass/shadcn/material]
+        M[MCP UI Resource]
     end
-    F -->|Config| A
-    A --> M
-    M --> G
-    G -->|HTML| A
+    E[(External API)]
+    F -->|endpoint + instructions| A
+    A --> DS
+    DS <--> E
+    DS --> P
+    P <--> L
+    P --> T
+    T --> M
+    M -->|HTML resource| A
     A --> R
     R --> I
     I <-->|PostMessage| R
-    R -->|API Calls| A
-    A --> D
 ```
 
 - **Iframe isolation** → safe execution of dynamic UI
